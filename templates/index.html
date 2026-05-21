@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drone Control Panel</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.4/socket.io.min.js"></script>
+    <script src="https://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Основная камера -->
+        <div class="main-camera">
+            <img src="http://localhost:8080/stream?topic=/camera1/image_raw">
+        </div>
+    
+        <!-- Правая панель -->
+        <div class="right-panel">
+            <!-- Камера 2, активируемая только при работе TESTWIREFOLLOWER -->
+            <div class="camera2">
+                <img id="camera2-image" src="http://localhost:8080/stream?topic=/camera2/image_raw">
+                     
+            </div>
+            
+            <div class="trajectory-map">
+                <img id="route-image" src="/newroutes/scan_route_recent.png" alt="Flight Trajectory" style="display: none;">
+                    <div class="route-placeholder" id="routePlaceholder">
+                    </div>
+            </div>
+            
+            <div class="logs-container">
+                <div class="log-box" id="logContainer"></div>
+            </div>
+        </div>
+    
+        <!-- Кнопки -->
+        <div class="control-panel">
+            <button class="btn-start" onclick="startMission()">Запуск</button>
+            <button class="btn-emergency" onclick="emergencyReturn()">Экстренный возврат</button>
+            <button class="btn-pause" id="pauseBtn" onclick="togglePause()">Пауза</button>
+        </div>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
+
+

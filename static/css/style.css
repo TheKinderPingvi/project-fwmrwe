@@ -1,0 +1,175 @@
+:root {
+    --primary-bg: #ffffff;
+    --secondary-bg: #f0f0f0;
+    --accent-color: #b8b8b8;
+    --text-color: #000000;
+    --main-camera-height: 720px;  
+    --right-panel-width: 400px;   
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background: var(--primary-bg);
+    color: var(--text-color);
+    font-family: 'DejaVu Sans Mono Book', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto var(--right-panel-width);
+    grid-template-rows: var(--main-camera-height) auto;
+    gap: 20px;
+    align-items: end; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Основная камера */
+.main-camera {
+    width: calc(var(--main-camera-height) * 1.777);
+    height: var(--main-camera-height);
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.main-camera img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Правая панель */
+.right-panel {
+    height: var(--main-camera-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Верхние блоки (камера 2 и карта маршрута) */
+.camera2 {
+    height: 25%;
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 4px 0;          /* отступы сверху и снизу 4px */
+    box-sizing: border-box
+} 
+
+.camera2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.trajectory-map {
+    height: 25%;
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 4px 0;          /* отступы сверху и снизу 4px */
+    box-sizing: border-box
+}
+
+.trajectory-map img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #000;
+    border-radius: 4px;
+}
+
+/* Логи */
+.logs-container {
+    height: 50%;
+    background: var(--secondary-bg);
+    border-radius: 8px;
+    padding: 10px 0; /* убран горизонтальный padding – теперь фон логов занимает всю ширину */
+}
+
+.log-box {
+    height: calc(100% - 20px);
+    overflow-y: auto;
+    background: #000;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 0 10px; /* горизонтальные отступы перенесены внутрь, чтобы текст не прилипал к краям */
+}
+
+/* Панель управления */
+.control-panel {
+    grid-column: 1;
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: flex-start;
+}
+
+button {
+    padding: 12px 25px;
+    border: 2px solid var(--accent-color);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s;
+    background: transparent;
+    color: var(--text-color);
+}
+
+.btn-start:hover {
+    background: #e0e0e0;
+}
+
+.btn-emergency {
+    border-color: #ff4444;
+    color: #ff4444;
+}
+
+.btn-emergency:hover {
+    background: #ffe0e0;
+}
+
+.btn-pause:hover {
+    background: #e0e0e0;
+}
+
+.log-entry {
+    padding: 8px;
+    margin: 5px 0;
+    background: rgba(0,0,0,0.05);
+    border-radius: 3px;
+    font-family: 'DejaVu Sans Mono Book', monospace;
+    font-size: 0.9em;
+    color: var(--text-color);
+}
+
+.route-placeholder {
+    width: 100%;
+    height: 100%;
+    background: #2a2a2a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #888;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.route-placeholder p {
+    margin: 5px 0;
+}
+
+.route-placeholder .small {
+    font-size: 12px;
+    color: #666;
+}
+
+
+
+
+
+
