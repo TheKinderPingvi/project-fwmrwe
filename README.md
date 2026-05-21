@@ -206,8 +206,7 @@
 
 ## Демо-видео работы проекта в COEX Clover 
 
-Видео
-
+https://github.com/TheKinderPingvi/project-fwmrwe/blob/main/demoRvizWeb1.1.mp4
 
 
 
