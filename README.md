@@ -37,6 +37,7 @@
 
 ### Блок веб-интерфейса
 <br>
+
 ![Картинка Веб-Интерфейса](https://github.com/TheKinderPingvi/project-fwmrwe/raw/main/newroutes/web-interface1.1.png)
 
 > Краткое описание пользовательского интерфейса:
