@@ -1,5 +1,5 @@
 # Проект "Моделирование полета беспилотного летального аппарата для оценки состояния контактной подвески"
-![Картинка Обложки](https://github.com/TheKinderPingvi/project-fwmrwe/raw/main/newroutes/oblozhka1.1.png)
+![Картинка Обложки](https://github.com/TheKinderPingvi/project-fwmrwe/blob/main/newroutes/oblozhka1%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png)
 ## Автор
 Ильдеров Алексей Дмитриевич, ст. гр. ЭЭ-412 <br>
 (Уральский государственный университет путей сообщения, Электромеханический факультет, кафедра Электроснабжение транспорта)
