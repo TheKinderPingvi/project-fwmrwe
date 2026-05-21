@@ -36,7 +36,6 @@
    - *+ TESTWIREFOLLOWER.py - программа имитации движения вдоль троса (после сцепки)
 
 ### Блок веб-интерфейса
-<br>
 
 ![Картинка Веб-Интерфейса](https://github.com/TheKinderPingvi/project-fwmrwe/raw/main/newroutes/web-interface1.1.png)
 
