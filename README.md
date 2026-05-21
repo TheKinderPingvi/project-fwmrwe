@@ -210,9 +210,7 @@
 
 ## Демо-видео работы проекта в COEX Clover 
 
-<video width="100%" controls>
-  <source src="https://github.com/TheKinderPingvi/project-fwmrwe/raw/main/demoRvizWeb1.1.mp4" type="video/mp4">
-</video>
+Демо-видео (Яндекс Диск): https://disk.yandex.ru/i/JxX03_w59Z2RIw
 
 
 
