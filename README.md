@@ -218,7 +218,7 @@
 ## Демо-видео работы в COEX Clover и презентация проекта 
 
 Демо-видео (Яндекс Диск): https://disk.yandex.ru/i/JxX03_w59Z2RIw <br>
-Презентация (Яндекс Диск): https://disk.yandex.ru/i/6r2FIMAk-bC9Mg
+Презентация (Яндекс Диск): https://disk.yandex.ru/i/_1L3O3YO5PPFTw
 
 
 
